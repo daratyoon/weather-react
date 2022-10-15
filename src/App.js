@@ -7,16 +7,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         <SearchEngine />
-        <h1>Hello from React!</h1>
         <Weather city="Houston" />
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/daratyoon/weather-react"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
-          Learn React
+          Open-Sourced Code
         </a>
+        <span>by Sandra Tsai-Yun</span>
       </header>
     </div>
   );
