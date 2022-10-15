@@ -1,10 +1,12 @@
 import "./App.css";
 import Weather from "./Weather";
+import SearchEngine from "./SearchEngine";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <SearchEngine />
         <h1>Hello from React!</h1>
         <Weather city="Houston" />
         <a
