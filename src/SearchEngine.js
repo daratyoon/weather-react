@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./SearchEngine.css";
 
 export default function SearchEngine() {
   let [city, setCity] = useState("");
@@ -9,7 +10,7 @@ export default function SearchEngine() {
     setWeatherInfo(
       <ul>
         <li>Temperature: {Math.round(response.data.main.temp)}°F</li>
-        <li>Description: {response.data.weather[0].description}</li>
+        <li>Descrip: {response.data.weather[0].description}</li>
         <li>Humidity: {response.data.main.humidity}%</li>
         <li>Wind: {response.data.wind.speed} mph</li>
       </ul>

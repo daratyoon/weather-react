@@ -1,0 +1,9 @@
+li {
+  text-align: center;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.SearchEngine {
+  margin: 0 auto;
+}
