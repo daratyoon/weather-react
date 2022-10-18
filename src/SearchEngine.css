@@ -4,6 +4,6 @@ li {
   text-transform: capitalize;
 }
 
-.SearchEngine {
-  margin: 0 auto;
+form {
+  border-radius: 1px;
 }

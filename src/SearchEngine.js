@@ -28,7 +28,6 @@ export default function SearchEngine() {
   function changeCity(event) {
     setCity(event.target.value);
   }
-
   return (
     <div className="SearchEngine">
       <form onSubmit={handleSubmit}>
