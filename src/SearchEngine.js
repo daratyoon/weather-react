@@ -31,8 +31,13 @@ export default function SearchEngine() {
   return (
     <div className="SearchEngine">
       <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="Seach City" onChange={changeCity} />
-        <input type="submit" value="Search" />
+        <input
+          type="search"
+          placeholder="Seach City"
+          onChange={changeCity}
+          className="SearchCityBar"
+        />
+        <input type="submit" value="Search" className="SearchCityButton" />
       </form>
       <div>{weatherInfo}</div>
     </div>

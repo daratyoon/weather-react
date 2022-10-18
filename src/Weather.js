@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import "./Weather.css";
 
 export default function Weather(props) {
   function getWeather(response) {
@@ -11,9 +12,16 @@ export default function Weather(props) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(getWeather);
+
   return (
     <div className="Weather">
-      <h2>Weather App</h2>
+      <h1>Houston</h1>
+      <ul>
+        <li>58°F</li>
+        <li>Mostly Sunny</li>
+        <li>Tuesday, October 18, 2022</li>
+        <li>11:25AM</li>
+      </ul>
     </div>
   );
 }
