@@ -9,8 +9,6 @@ form {
 }
 
 form .SearchCityButton {
-  position: relative;
-  left: 30%;
   background-color: #54ad95;
   border-radius: 10px;
   color: #ea6691;
