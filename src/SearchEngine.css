@@ -3,20 +3,3 @@ li {
   list-style: none;
   text-transform: capitalize;
 }
-
-form {
-  border-radius: 1px;
-}
-
-form .SearchCityButton {
-  background-color: #54ad95;
-  border-radius: 10px;
-  color: #ea6691;
-  border: transparent;
-  margin: 0 auto;
-  padding: 8px;
-}
-
-form .SearchCityBar {
-  padding: 8px;
-}
