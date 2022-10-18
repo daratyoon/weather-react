@@ -15,21 +15,25 @@ export default function Weather(props) {
 
   return (
     <div className="Weather">
-      <div className="col-6">
-        <h1>Houston</h1>
-        <ul>
-          <li>58°F</li>
-          <li>Mostly Sunny</li>
-          <li>Tuesday, October 18, 2022</li>
-          <li>11:25AM</li>
-        </ul>
+      <div className="row">
+        <div className="col-6">
+          <h1>Houston</h1>
+          <ul>
+            <li>58°F</li>
+            <li>Mostly Sunny</li>
+            <li>Tuesday, October 18, 2022</li>
+            <li>11:25AM</li>
+          </ul>
+        </div>
       </div>
-      <div className="col-6">
-        <ul>
-          <li>Precipitation: 10% </li>
-          <li>Wind Speed: 15mph</li>
-          <li>Humidity: 53%</li>
-        </ul>
+      <div className="row">
+        <div className="col-6">
+          <ul>
+            <li>Precipitation: 10% </li>
+            <li>Wind Speed: 15mph</li>
+            <li>Humidity: 53%</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

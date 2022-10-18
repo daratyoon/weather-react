@@ -9,7 +9,7 @@ function App() {
         <header className="App-header">
           <SearchEngine />
           <h1>Weather React App</h1>
-          <Weather city="Houston" />
+          <Weather city="" />
         </header>
         <footer>
           <a
