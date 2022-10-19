@@ -1,6 +1,8 @@
 .App {
+  font-family: pt mono;
   text-align: center;
-  margin: 20px 30px;
+  margin: 15px auto;
+  max-width: 600px;
   border: 1px solid #c8c4ce;
 }
 
@@ -14,8 +16,8 @@
 }
 
 .App footer {
-  position: absolute;
-  bottom: 0;
-  left: 42%;
+  position: relative;
+  bottom: -60px;
   text-align: center;
+  display: block;
 }

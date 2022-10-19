@@ -38,6 +38,7 @@ export default function SearchEngine() {
               placeholder="Seach City"
               onChange={changeCity}
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">

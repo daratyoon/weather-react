@@ -3,3 +3,7 @@
   list-style: none;
   text-transform: capitalize;
 }
+
+.SearchEngine form {
+  margin: 30px;
+}
