@@ -22,9 +22,20 @@ export default function Weather(props) {
           </h1>
           <ul className="DailyInfo">
             <li>Tuesday, Oct 18, 2022</li>
-            <li>Mostly Sunny</li>
             <li>Last Updated: 11:25AM</li>
+            <li>Mostly Sunny</li>
           </ul>
+          <div>
+            <span>
+              {" "}
+              <img
+                alt="Sunny"
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              ></img>
+            </span>
+            <span className="DailyTemp">58°</span>{" "}
+            <span className="Unit">F|C</span>
+          </div>
         </div>
       </div>
       <div className="row">
