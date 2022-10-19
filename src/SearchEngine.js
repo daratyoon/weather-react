@@ -3,8 +3,8 @@ import axios from "axios";
 import "./SearchEngine.css";
 
 export default function SearchEngine() {
-  let [city, setCity] = useState("");
-  let [weatherInfo, setWeatherInfo] = useState("");
+  const [city, setCity] = useState("");
+  const [weatherInfo, setWeatherInfo] = useState("");
 
   function searchCity(response) {
     setWeatherInfo(

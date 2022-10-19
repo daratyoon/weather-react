@@ -8,8 +8,8 @@ export default function Weather(props) {
       response.data.name
     }`;
   }
-  let apiKey = "a432b612baftbo7e8e8c94493b9d5ee0";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.city}&key=${apiKey}&units=imperial`;
+  const apiKey = "a432b612baftbo7e8e8c94493b9d5ee0";
+  const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.city}&key=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(getWeather);
 
