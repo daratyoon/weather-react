@@ -1,17 +1,16 @@
-.Weather {
-  border-radius: 8px;
-  margin: -37px -67px;
-  padding: 20px;
-}
-
 .Weather li {
   list-style: none;
 }
 .Weather strong {
   margin-top: 0;
+  position: relative;
+  right: 55px;
 }
 .Weather .DailyInfo {
   font-size: 14px;
+  position: relative;
+  right: 69px;
+  top: -10px;
 }
 
 .Weather .DailyTemp {
