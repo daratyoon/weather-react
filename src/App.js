@@ -8,7 +8,6 @@ function App() {
       <div className="container">
         <header className="App-header">
           <SearchEngine />
-          <h1>Weather React App</h1>
           <Weather city="" />
         </header>
         <footer>

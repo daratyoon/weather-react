@@ -17,18 +17,19 @@ export default function Weather(props) {
     <div className="Weather">
       <div className="row">
         <div className="col-6">
-          <h1>Houston</h1>
-          <ul>
-            <li>58°F</li>
+          <h1>
+            <strong>Houston</strong>
+          </h1>
+          <ul className="DailyInfo">
+            <li>Tuesday, Oct 18, 2022</li>
             <li>Mostly Sunny</li>
-            <li>Tuesday, October 18, 2022</li>
-            <li>11:25AM</li>
+            <li>Last Updated: 11:25AM</li>
           </ul>
         </div>
       </div>
       <div className="row">
         <div className="col-6">
-          <ul>
+          <ul className="WeatherDetails">
             <li>Precipitation: 10% </li>
             <li>Wind Speed: 15mph</li>
             <li>Humidity: 53%</li>

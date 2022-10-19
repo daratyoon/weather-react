@@ -1,9 +1,22 @@
 .Weather {
   border-radius: 8px;
-  margin: 30px -70px;
+  margin: -37px -67px;
   padding: 20px;
 }
 
 .Weather li {
   list-style: none;
+}
+.Weather strong {
+  margin-top: 0;
+}
+.Weather .DailyInfo {
+  font-size: 22px;
+}
+
+.Weather .WeatherDetails {
+  font-size: 20px;
+  position: relative;
+  left: 99%;
+  top: -127%;
 }
