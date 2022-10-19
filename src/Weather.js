@@ -8,8 +8,9 @@ export default function Weather(props) {
       response.data.name
     }`;
   }
-  let apiKey = "e3af10cefc7c7a7f4ca878121a656948";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=imperial`;
+  let apiKey = "a432b612baftbo7e8e8c94493b9d5ee0";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.city}&key=${apiKey}
+`;
 
   axios.get(apiUrl).then(getWeather);
 
