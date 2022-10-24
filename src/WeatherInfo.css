@@ -16,12 +16,15 @@
 .WeatherInfo .DailyTemp {
   font-size: 40px;
   font-weight: bold;
+  position: relative;
+  right: 29px;
+  top: 9px;
 }
 
 .WeatherInfo .Unit {
   position: relative;
-  top: -18px;
-  right: 11px;
+  top: -12px;
+  right: 37px;
   font-size: 15px;
 }
 
@@ -30,4 +33,11 @@
   position: relative;
   left: 111%;
   top: -162%;
+}
+
+.WeatherInfo .weatherIcon {
+  margin-right: 2px;
+  position: relative;
+  left: -37px;
+  top: 1px;
 }

@@ -22,6 +22,7 @@ export default function WeatherInfo(props) {
               <img
                 alt="Sunny"
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                className="weatherIcon"
               ></img>
             </span>
             <span className="DailyTemp">{props.data.temperature}°</span>{" "}
