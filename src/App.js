@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <SearchEngine />
+          <SearchEngine defaultCity="Houston" />
         </header>
         <footer>
           <a

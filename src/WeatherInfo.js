@@ -10,7 +10,7 @@ export default function WeatherInfo(props) {
             <strong>{props.data.city}</strong>
           </h1>
           <ul className="DailyInfo">
-            <li>Tuesday, Oct 18, 2022</li>
+            <li>Time</li>
             <li>Last Updated: 11:25AM</li>
             <li>{props.data.description}</li>
           </ul>
@@ -30,8 +30,8 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-6">
           <ul className="WeatherDetails">
-            <li>{props.data.wind}</li>
-            <li>{props.data.humidity}</li>
+            <li>Wind Speed: {props.data.wind}mph</li>
+            <li>Humidity:{props.data.humidity}</li>
           </ul>
         </div>
       </div>

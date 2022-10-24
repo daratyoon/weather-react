@@ -3,8 +3,8 @@ import axios from "axios";
 import "./SearchEngine.css";
 import WeatherInfo from "./WeatherInfo";
 
-export default function SearchEngine() {
-  const [city, setCity] = useState("");
+export default function SearchEngine(props) {
+  const [city, setCity] = useState(props.defaultCity);
   const [weatherInfo, setWeatherInfo] = useState({ ready: false });
 
   function searchCity(response) {
@@ -14,9 +14,9 @@ export default function SearchEngine() {
       temperature: response.data.temperature,
       humidity: response.data.temperature.humidity,
       date: new Date(response.data.time * 1000),
-      description: response.data.daily.description,
-      icon: response.data.daily.icon,
-      wind: response.data.daily.wind.speed,
+      description: response.data.condition.description,
+      icon: response.data.condition.icon,
+      wind: response.data.wind.speed,
       city: response.data.city,
     });
   }
@@ -60,7 +60,6 @@ export default function SearchEngine() {
             </div>
           </div>
         </form>
-        <div>{weatherInfo}</div>
         <WeatherInfo data={weatherInfo} />
       </div>
     );
