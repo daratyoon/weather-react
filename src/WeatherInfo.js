@@ -1,6 +1,6 @@
 import axios from "axios";
 import React from "react";
-import "./Weather.css";
+import "./WeatherInfo.css";
 
 export default function Weather(props) {
   function getWeather(response) {

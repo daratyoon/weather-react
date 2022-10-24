@@ -1,5 +1,4 @@
 import "./App.css";
-import Weather from "./Weather";
 import SearchEngine from "./SearchEngine";
 
 function App() {
@@ -8,7 +7,6 @@ function App() {
       <div className="container">
         <header className="App-header">
           <SearchEngine />
-          <Weather city="Houston" />
         </header>
         <footer>
           <a
