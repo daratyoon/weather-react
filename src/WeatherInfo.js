@@ -1,5 +1,6 @@
 import React from "react";
 import "./WeatherInfo.css";
+import FormattedDate from "./FormattedDate";
 
 export default function WeatherInfo(props) {
   return (
@@ -10,8 +11,9 @@ export default function WeatherInfo(props) {
             <strong>{props.data.city}</strong>
           </h1>
           <ul className="DailyInfo">
-            <li>Time</li>
-            <li>Last Updated: 11:25AM</li>
+            <li>
+              <FormattedDate date={props.data.date} />
+            </li>
             <li>{props.data.description}</li>
           </ul>
           <div>
@@ -22,7 +24,7 @@ export default function WeatherInfo(props) {
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               ></img>
             </span>
-            <span className="DailyTemp">58°</span>{" "}
+            <span className="DailyTemp">{props.data.temperature}°</span>{" "}
             <span className="Unit">F|C</span>
           </div>
         </div>
@@ -30,8 +32,8 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-6">
           <ul className="WeatherDetails">
-            <li>Wind Speed: {props.data.wind}mph</li>
-            <li>Humidity:{props.data.humidity}</li>
+            <li>Wind Speed:{props.data.wind}mph</li>
+            <li>Humidity:{props.data.humidity}%</li>
           </ul>
         </div>
       </div>

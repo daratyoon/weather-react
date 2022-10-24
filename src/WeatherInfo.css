@@ -7,7 +7,7 @@
   right: 55px;
 }
 .WeatherInfo .DailyInfo {
-  font-size: 14px;
+  font-size: 15px;
   position: relative;
   right: 69px;
   top: -10px;
@@ -25,7 +25,7 @@
   font-size: 15px;
 }
 
-.WeatherInfo .WeatherInfoDetails {
+.WeatherInfo .WeatherDetails {
   font-size: 14px;
   position: relative;
   left: 111%;
