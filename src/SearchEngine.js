@@ -8,20 +8,23 @@ export default function SearchEngine() {
   const [weatherInfo, setWeatherInfo] = useState("");
 
   function searchCity(response) {
-    setWeatherInfo(
-      <ul>
-        <li>Temperature: {Math.round(response.data.main.temp)}°F</li>
-        <li>Descrip: {response.data.weather[0].description}</li>
-        <li>Humidity: {response.data.main.humidity}%</li>
-        <li>Wind: {response.data.wind.speed} mph</li>
-      </ul>
-    );
+    console.log(response.data);
+    setWeatherInfo({
+      coordinates: response.data.coord,
+      temperature: response.data.main.temp,
+      humidity: response.data.temperature.humidity,
+      date: new Date(response.data.dt * 1000),
+      description: response.data.condition.description,
+      icon: response.data.condition.icon,
+      wind: response.data.wind.speed,
+      city: response.data.name,
+    });
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    let apiKey = "e3af10cefc7c7a7f4ca878121a656948";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    let apiKey = "a432b612baftbo7e8e8c94493b9d5ee0";
+    let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
 
     axios.get(url).then(searchCity);
   }
@@ -52,7 +55,7 @@ export default function SearchEngine() {
         </div>
       </form>
       <div>{weatherInfo}</div>
-      <WeatherInfo />
+      <WeatherInfo data={weatherInfo} />
     </div>
   );
 }
