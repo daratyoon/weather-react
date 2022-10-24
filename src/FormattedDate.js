@@ -1,6 +1,23 @@
 import React from "react";
 
 export default function FormattedDate(props) {
+  let year = props.date.getFullYear();
+  let date = props.date.getDate();
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  let month = months[props.date.getMonth()];
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
   let day = days[props.date.getDay()];
   let hours = props.date.getHours();
@@ -14,6 +31,8 @@ export default function FormattedDate(props) {
 
   return (
     <div className="FormattedDate">
+      {date} {month} {year}
+      <br />
       {day} {hours}:{minutes}
     </div>
   );
