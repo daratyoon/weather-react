@@ -1,31 +1,31 @@
-.Weather li {
+.WeatherInfo li {
   list-style: none;
 }
-.Weather strong {
+.WeatherInfo strong {
   margin-top: 0;
   position: relative;
   right: 55px;
 }
-.Weather .DailyInfo {
+.WeatherInfo .DailyInfo {
   font-size: 14px;
   position: relative;
   right: 69px;
   top: -10px;
 }
 
-.Weather .DailyTemp {
+.WeatherInfo .DailyTemp {
   font-size: 40px;
   font-weight: bold;
 }
 
-.Weather .Unit {
+.WeatherInfo .Unit {
   position: relative;
   top: -18px;
   right: 11px;
   font-size: 15px;
 }
 
-.Weather .WeatherDetails {
+.WeatherInfo .WeatherInfoDetails {
   font-size: 14px;
   position: relative;
   left: 111%;

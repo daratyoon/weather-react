@@ -1,29 +1,18 @@
-import axios from "axios";
 import React from "react";
 import "./WeatherInfo.css";
 
-export default function Weather(props) {
-  function getWeather(response) {
-    return `The weather is ${Math.round(response.data.main.temp)}°F in ${
-      response.data.name
-    }`;
-  }
-  const apiKey = "a432b612baftbo7e8e8c94493b9d5ee0";
-  const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.city}&key=${apiKey}&units=imperial`;
-
-  axios.get(apiUrl).then(getWeather);
-
+export default function WeatherInfo(props) {
   return (
-    <div className="Weather">
+    <div className="WeatherInfo">
       <div className="row">
         <div className="col-6">
           <h1>
-            <strong>Houston</strong>
+            <strong>{props.data.city}</strong>
           </h1>
           <ul className="DailyInfo">
             <li>Tuesday, Oct 18, 2022</li>
             <li>Last Updated: 11:25AM</li>
-            <li>Mostly Sunny</li>
+            <li>{props.data.description}</li>
           </ul>
           <div>
             <span>
@@ -41,9 +30,8 @@ export default function Weather(props) {
       <div className="row">
         <div className="col-6">
           <ul className="WeatherDetails">
-            <li>Precipitation: 10% </li>
-            <li>Wind Speed: 15mph</li>
-            <li>Humidity: 53%</li>
+            <li>{props.data.wind}</li>
+            <li>{props.data.humidity}</li>
           </ul>
         </div>
       </div>
