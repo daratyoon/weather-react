@@ -18,12 +18,12 @@
   font-weight: bold;
   position: relative;
   right: 29px;
-  top: 9px;
+  top: -18px;
 }
 
 .WeatherInfo .Unit {
   position: relative;
-  top: -12px;
+  top: -38px;
   right: 37px;
   font-size: 15px;
 }
