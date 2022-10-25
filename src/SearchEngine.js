@@ -19,6 +19,7 @@ export default function SearchEngine(props) {
       wind: Math.round(response.data.wind.speed),
       city: response.data.city,
       icon: response.data.condition.icon,
+      iconUrl: response.data.condition.icon_url,
     });
   }
 

@@ -26,7 +26,7 @@ export default function UnitConversion(props) {
       </div>
     );
   } else {
-    let celsius = ((props.fahrenheit - 32) * 5) / 9;
+    let celsius = Math.round(((props.fahrenheit - 32) * 5) / 9);
     return (
       <div className="UnitConversion">
         <span className="DailyTemp">{celsius}</span>{" "}
