@@ -8,7 +8,6 @@ export default function SearchEngine(props) {
   const [weatherInfo, setWeatherInfo] = useState({ ready: false });
 
   function searchCity(response) {
-    console.log(response.data);
     setWeatherInfo({
       ready: true,
       coordinates: response.data.coordinates,
