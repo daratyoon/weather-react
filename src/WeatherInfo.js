@@ -3,6 +3,7 @@ import "./WeatherInfo.css";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import UnitConversion from "./UnitConversion";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherInfo(props) {
   return (
@@ -35,6 +36,7 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
+      <WeatherForecast />
     </div>
   );
 }
