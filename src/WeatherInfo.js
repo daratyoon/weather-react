@@ -19,12 +19,16 @@ export default function WeatherInfo(props) {
             </li>
             <li>{props.data.description}</li>
           </ul>
-          <div>
-            <span>
-              {" "}
-              <WeatherIcon icon={props.data.icon} />
-            </span>
-            <UnitConversion fahrenheit={props.data.temperature} />
+          <div className="row mt-3">
+            <div className="col-6">
+              <div className="d-flex">
+                <span>
+                  {" "}
+                  <WeatherIcon icon={props.data.icon} />
+                </span>
+                <UnitConversion fahrenheit={props.data.temperature} />
+              </div>
+            </div>
           </div>
         </div>
       </div>

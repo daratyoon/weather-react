@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import WeatherIcon from "./WeatherIcon";
+import "./WeatherForecast.css";
 
 export default function WeatherForecast(props) {
   function handleResponse(response) {
@@ -17,7 +18,9 @@ export default function WeatherForecast(props) {
       <div className="row">
         <div className="col">
           <div className="WeatherForecast-day">Fri</div>
-          <WeatherIcon icon="clear-sky-day" />
+          <span>
+            <WeatherIcon icon="clear-sky-day" size={35} />
+          </span>
           <div className="WeatherForecast-temp">
             <span className="WeatherForecast-max">20°</span>
             <span className="WeatherForecast-min">15°</span>

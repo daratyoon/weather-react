@@ -7,9 +7,3 @@
 .SearchEngine form {
   margin: 30px;
 }
-
-.SearchEngine canvas {
-  margin: -39px auto;
-  right: 41%;
-  position: relative;
-}

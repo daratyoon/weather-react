@@ -1,0 +1,12 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast .WeatherForecast-temp {
+  color: teal;
+}
+
+.WeatherForecast .WeatherForecast-min {
+  opacity: 0.5;
+  margin-left: 5px;
+}
