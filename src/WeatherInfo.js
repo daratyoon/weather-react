@@ -36,7 +36,7 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
-      <WeatherForecast />
+      <WeatherForecast forecast={props.data.city} />
     </div>
   );
 }
