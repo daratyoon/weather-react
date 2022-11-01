@@ -4,6 +4,7 @@
 
 .WeatherForecast .WeatherForecast-temp {
   color: teal;
+  font-size: 18px;
 }
 
 .WeatherForecast .WeatherForecast-min {
