@@ -34,7 +34,7 @@ export default function UnitConversion(props) {
           <a href="/" onClick={showFahrenheit}>
             °F
           </a>
-          | °C
+          |°C
         </span>
       </div>
     );

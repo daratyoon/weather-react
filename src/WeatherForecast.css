@@ -1,9 +1,9 @@
 .WeatherForecast {
   text-align: center;
+  color: #da4675;
 }
 
 .WeatherForecast .WeatherForecast-temp {
-  color: teal;
   font-size: 15px;
 }
 

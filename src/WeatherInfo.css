@@ -7,7 +7,7 @@
   right: 55px;
 }
 .WeatherInfo .DailyInfo {
-  font-size: 15px;
+  font-size: 18px;
   position: relative;
   right: 69px;
   top: -10px;
@@ -23,22 +23,22 @@
 
 .WeatherInfo .Unit {
   position: relative;
-  top: -56px;
-  right: -54px;
+  top: -54px;
+  right: -58px;
   font-size: 15px;
 }
 
 .WeatherInfo .WeatherDetails {
-  font-size: 14px;
+  font-size: 18px;
   position: relative;
   left: 111%;
   top: -162%;
-  color: #db4675;
+  color: #37967b;
 }
 
 .WeatherInfo .WeatherInfo-description {
   font-weight: bolder;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .WeatherInfo .weatherIcon {
