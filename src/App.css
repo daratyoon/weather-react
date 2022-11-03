@@ -6,10 +6,15 @@
   border: 1px solid #c8c4ce;
   border-radius: 8px;
   padding: 20px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(251, 222, 238) 15.6%,
+    rgb(206, 201, 226) 80.3%
+  );
 }
 
 .App-header {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: rgb(84, 173, 149);
 }
 

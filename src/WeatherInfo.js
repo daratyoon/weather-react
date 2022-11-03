@@ -17,7 +17,6 @@ export default function WeatherInfo(props) {
             <li>
               <FormattedDate date={props.data.date} />
             </li>
-            <li>{props.data.description}</li>
           </ul>
           <div className="row mt-3">
             <div className="col-6">
@@ -35,6 +34,9 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-6">
           <ul className="WeatherDetails">
+            <li className="WeatherInfo-description">
+              {props.data.description}
+            </li>
             <li>Wind Speed:{props.data.wind}mph</li>
             <li>Humidity:{props.data.humidity}%</li>
           </ul>

@@ -33,6 +33,12 @@
   position: relative;
   left: 111%;
   top: -162%;
+  color: #db4675;
+}
+
+.WeatherInfo .WeatherInfo-description {
+  font-weight: bolder;
+  font-size: 15px;
 }
 
 .WeatherInfo .weatherIcon {
