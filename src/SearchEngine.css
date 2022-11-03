@@ -7,3 +7,9 @@
 .SearchEngine form {
   margin: 30px;
 }
+
+.SearchEngine .btn:hover {
+  background-color: #54ad95 !important;
+  border: #54ad95;
+  color: #ffffff;
+}
