@@ -23,7 +23,7 @@ export default function WeatherInfo(props) {
               <div className="d-flex">
                 <span>
                   {" "}
-                  <WeatherIcon icon={props.data.icon} />
+                  <WeatherIcon icon={props.data.icon} size={58} />
                 </span>
                 <UnitConversion fahrenheit={props.data.temperature} />
               </div>
