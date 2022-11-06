@@ -15,9 +15,9 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            Open-Sourced Code{" "}
+            Open-Sourced Code
           </a>
-          <span>by Sandra Tsai-Yun</span>
+          <span> by Sandra Tsai-Yun</span>
         </footer>
       </div>
     </div>
