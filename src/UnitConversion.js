@@ -16,7 +16,7 @@ export default function UnitConversion(props) {
   if (unit === "fahrenheit") {
     return (
       <div className="UnitConversion">
-        <span className="DailyTemp">{props.fahrenheit}</span>{" "}
+        <p className="DailyTemp m-0">{props.fahrenheit}</p>{" "}
         <span className="Unit">
           °F|
           <a href="/" onClick={showCelsius}>
@@ -29,7 +29,7 @@ export default function UnitConversion(props) {
     let celsius = Math.round(((props.fahrenheit - 32) * 5) / 9);
     return (
       <div className="UnitConversion">
-        <span className="DailyTemp">{celsius}</span>{" "}
+        <p className="DailyTemp m-0">{celsius}</p>{" "}
         <span className="Unit">
           <a href="/" onClick={showFahrenheit}>
             °F
